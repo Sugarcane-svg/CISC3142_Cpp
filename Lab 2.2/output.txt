@@ -1,0 +1,8 @@
+David·Arnow·65·1001·2000·01·10Using·(Name,·int,·int,·Date)·constructor↵
+from·Person:·David·Arnow·(65)↵
+as·Employee:·David·Arnow·(65)·#1001·1/10/2000↵
+Using·(String,·String,·int,·int,·int,·int,·int)·constructor↵
+from·Person:·David·Arnow·(65)↵
+as·Employee:·David·Arnow·(65)·#1001·1/10/2000↵
+
+newline and space are count
