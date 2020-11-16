@@ -32,6 +32,3 @@ functions:
 	mulInPlace(Rational obj)    //in place multiplication, no new obj created
 	divInPlace(Rational obj)    //in place division, no new obj created
 	main()    //perform all tests
-
-
-Rational folder contains the implementation in C++
