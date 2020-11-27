@@ -1,5 +1,7 @@
 class design:
 
+	java version 
+
 private values: 
 
 	numerator
