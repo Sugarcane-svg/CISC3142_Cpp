@@ -2,7 +2,7 @@
 #include "rational_exception.h"
 #include "gcd.h"
 
-void simply(int a, int b)
+void simply(int &a, int &b) //only the address will change the value, without &, it only change the alias, when finish the function, all variable goes out of scope
 {
     int g = gcd(a, b);
     a /= g;
@@ -54,7 +54,7 @@ Rational &Rational::operator*=(const Rational &r)
 }
 Rational &Rational::operator/=(const Rational &r)
 {
-    return this*=(r);
+    return this *= (r);
 }
 Rational Rational::operator-() const
 {
