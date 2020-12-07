@@ -14,9 +14,9 @@ namespace mystring
     public:
         string(const char *cs = ""); //constructor
         string(const string &s);   //copy constructor 
-        ~string();
+        ~string();  //destructor
         string &operator=(const string &rhs); //deep copy
-        char &operator[](int index); 
+        char &operator[](int index); //move pointer into specific position
         string &operator+=(const string &s);  //in-place concatenation
         int length() const;
         void clear();
