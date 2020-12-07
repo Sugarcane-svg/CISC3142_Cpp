@@ -9,11 +9,11 @@ namespace mystring
     class string_Exception
     {
     public:
-        string_Exception(string what) : what(what) {}
-        string getWhat() { return what; }
+        string_Exception(std::string what) : what(what) {}
+        std::string getWhat() { return what; }
 
     private:
-        string what;
+        std::string what;
     };
 
 } // namespace mystring

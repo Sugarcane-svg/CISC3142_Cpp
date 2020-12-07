@@ -1,23 +1,23 @@
 #ifndef MYSTRING_H
 #define MYSTRING_H
 
-#include <iostream>
+#include
 
 namespace mystring
 {
 
     class string
     {
-        friend std::ostream &operator<<(std::ostream &os, const string &s);
-        friend string operator+(const string &s1, const string &s2);
+        friend std::ostream &operator<<(std::ostream &os, const string &s); //print output
+        friend string operator+(const string &s1, const string &s2);        //concat
 
     public:
-        string(const char *cs = "");
-        string(const string &s);
+        string(const char *cs = ""); //constructor
+        string(const string &s);   //copy constructor 
         ~string();
-        string &operator=(const string &rhs);
-        char &operator[](int index);
-        string &operator+=(const string &s);
+        string &operator=(const string &rhs); //deep copy
+        char &operator[](int index); 
+        string &operator+=(const string &s);  //in-place concatenation
         int length() const;
         void clear();
 
