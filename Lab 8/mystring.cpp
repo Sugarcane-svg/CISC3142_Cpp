@@ -13,7 +13,7 @@ namespace mystring
     }
     string operator+(const string &s1, const string &s2)
     {
-        string temp = s1;
+        string temp(s1);
         temp += s2;
         return temp;
     }
@@ -23,7 +23,7 @@ namespace mystring
     {
         strcpy(cs, a);
     }
-    string::string(const string &s)
+    string::string(const string &s) : string(s.cs)
     {
         strcpy(cs, s.cs);
     }
@@ -62,7 +62,7 @@ namespace mystring
     }
     void string::clear()
     {
-        cs = '\0';
+        cs[0] = '\0';
     }
 
 } // namespace mystring
